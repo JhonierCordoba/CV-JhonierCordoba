@@ -11,26 +11,29 @@ import { Footer } from 'layouts/Footer';
 
 const Home = () => (
   <main>
-    <div>
-      <TopContainer />
-      <Resume />
-      <DotSeparator />
-      <div className='section 2xl:mx-20'>
-        <WorkExperience />
-        <Hobbies />
+    <head>Jhonier CV</head>
+    <body>
+      <div>
+        <TopContainer />
+        <Resume />
+        <DotSeparator />
+        <div className='section 2xl:mx-20'>
+          <WorkExperience />
+          <Hobbies />
+        </div>
+        <DotSeparator />
+        <div className='section 2xl:mx-20'>
+          <Courses />
+          <EducationalBackground />
+        </div>
+        <DotSeparator />
+        <div className='flex flex-col justify-center'>
+          <Languages />
+          <ContactMe />
+        </div>
+        <Footer />
       </div>
-      <DotSeparator />
-      <div className='section 2xl:mx-20'>
-        <Courses />
-        <EducationalBackground />
-      </div>
-      <DotSeparator />
-      <div className='flex flex-col justify-center'>
-        <Languages />
-        <ContactMe />
-      </div>
-      <Footer />
-    </div>
+    </body>
   </main>
 );
 
